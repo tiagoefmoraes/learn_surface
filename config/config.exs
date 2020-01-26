@@ -15,7 +15,10 @@ config :learn_surface, LearnSurfaceWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "dfZwSq0rPUEj70UIwz6a666791/WB8PMEIfetWqvAwHQWfWwdbFIzkANAT2Yln7J",
   render_errors: [view: LearnSurfaceWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: LearnSurface.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: LearnSurface.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "kStPJW+kC4H6yhKtBiTNGq/elBH1wQkDOEQufcnDLkpyWYIIrdGjspVWPHNTClhQ"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,
