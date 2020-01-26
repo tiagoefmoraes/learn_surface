@@ -44,6 +44,7 @@ defmodule LearnSurfaceWeb do
       import LearnSurfaceWeb.Gettext
       alias LearnSurfaceWeb.Router.Helpers, as: Routes
       import Phoenix.LiveView.Helpers
+      import Surface
     end
   end
 
