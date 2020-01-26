@@ -18,6 +18,7 @@ defmodule LearnSurfaceWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/surface", SurfaceIndex
   end
 
   # Other scopes may use custom stacks.
