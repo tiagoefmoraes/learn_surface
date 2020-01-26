@@ -1,0 +1,7 @@
+Create new phoenix project
+    mix phx.new hello
+
+    when creating phoenix project do we need webpack or not?
+        --no-webpack
+
+    without database --no-ecto
