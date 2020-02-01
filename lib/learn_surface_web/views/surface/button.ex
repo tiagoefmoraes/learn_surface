@@ -1,13 +1,14 @@
 defmodule LearnSurfaceWeb.Button do
   use Surface.Component
   alias LearnSurfaceWeb.Sample
+  alias LearnSurfaceWeb.SectionSeparator
   alias SurfaceBulma.Button
 
   def render(assigns) do
     ~H"""
     <h1 class="title">Button</h1>
     <h2 class="subtitle">
-      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+      The classic <strong>button</strong>, in different colors, sizes, and states
     </h2>
 
     <Sample>
@@ -22,7 +23,7 @@ defmodule LearnSurfaceWeb.Button do
       <input class="button" type="reset" value="Reset input">
     </Sample>
 
-    <h2 class="subtitle">Colors</h2>
+    <SectionSeparator id="colors" title="Colors" />
 
     <Sample>
       <Button color="white">White</Button>
@@ -60,7 +61,8 @@ defmodule LearnSurfaceWeb.Button do
       </div>
     </Sample>
 
-    <h2 class="subtitle">Sizes</h2>
+    <SectionSeparator id="sizes" title="Sizes" />
+
     <Sample>
       <Button size="small">Small</Button>
       <Button>Default</Button>
@@ -87,12 +89,16 @@ defmodule LearnSurfaceWeb.Button do
       </div>
     </Sample>
 
+    <SectionSeparator id="displays" title="Displays" />
+
     <Sample>
       <Button size="small" expand>Small expanded</Button>
       <Button expand>Normal expanded</Button>
       <Button size="medium" expand>Medium expanded</Button>
       <Button size="large" expand>Large expanded</Button>
     </Sample>
+
+    <SectionSeparator id="styles" title="Styles" />
 
     <Sample>
       <Button outlined>Outlined</Button>
@@ -127,6 +133,8 @@ defmodule LearnSurfaceWeb.Button do
       <Button color="success" rounded>Rounded</Button>
       <Button color="danger" rounded>Rounded</Button>
     </Sample>
+
+    <SectionSeparator id="states" title="States" />
 
     <Sample>
       <Button>Normal</Button>
