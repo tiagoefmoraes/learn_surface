@@ -12,3 +12,35 @@ missing information to install live_view from git
 VSCode Elixir_LS mix.lock
   warning: found quoted keyword "surface" but the quotes are not required. Note that keywords are always atoms, even when quoted. Similar to atoms, keywords made exclusively of Unicode letters, numbers, underscore, and @ do not require quotes
     nofile:27
+
+
+get_flash
+ctrl+click in properties
+put components in *_web for reloading to work
+ctrl+v with wrong identation
+formatting
+
+space on
+      <button>
+      {{ @inner_content.() }}
+      </button>
+  becomes
+      <button>
+      {{ @inner_content.() }}
+      ////this empty line
+      </button>
+
+native attributes
+
+css_class generate only unique values? ex: <Button class="button">duplicates button</Button>
+button should encapsulate icon?
+don't generate properties when they are nil, empty? and false(y)?
+
+error when missing open " on property ex: <Icon size=small" />
+
+Icon page
+  replace item with properties ex: style(fab), name(fa-erlang)
+  create FaIcon where name can be just "erlang"
+  is this too much complexity?
+  https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
+Field page

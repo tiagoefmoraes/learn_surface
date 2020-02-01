@@ -3,6 +3,7 @@ defmodule LearnSurfaceWeb.Button do
   alias LearnSurfaceWeb.Sample
   alias LearnSurfaceWeb.SectionSeparator
   alias SurfaceBulma.Button
+  alias SurfaceBulma.Icon
 
   def render(assigns) do
     ~H"""
@@ -200,6 +201,120 @@ defmodule LearnSurfaceWeb.Button do
       <Button color="warning" title="Disabled button" disabled>Disabled</Button>
       <Button color="danger" title="Disabled button" disabled>Disabled</Button>
     </Sample>
+
+    <Sample>
+      <p class="buttons">
+        <Button>
+          <Icon icon="fas fa-bold" />
+        </Button>
+        <Button>
+          <Icon icon="fab fa-phoenix-framework" />
+          <span>Phoenix</span>
+        </Button>
+        <Button color="danger" outlined>
+          <span>Erlang</span>
+          <Icon icon="fab fa-erlang" />
+        </Button>
+        <Button size="large">
+          <Icon icon="fab fa-phoenix-framework" />
+          <span>Phoenix</span>
+        </Button>
+      </p>
+    </Sample>
+
+    <Sample>
+      <p class="buttons">
+        <Button size="large">
+          <Icon size="small" icon="fas fa-heading" />
+        </Button>
+        <Button size="large">
+          <Icon icon="fas fa-heading fa-lg" />
+        </Button>
+        <Button size="large">
+          <Icon size="medium" icon="fas fa-heading fa-2x" />
+        </Button>
+      </p>
+    </Sample>
+
+
+    <SectionSeparator id="button_group" title="Button group" />
+
+    <Sample>
+      <div class="field is-grouped">
+        <p class="control">
+          <Button color="link">
+            Save changes
+          </Button>
+        </p>
+        <p class="control">
+          <Button>
+            Cancel
+          </Button>
+        </p>
+        <p class="control">
+          <Button color="danger">
+            Delete post
+          </Button>
+        </p>
+      </div>
+    </Sample>
+
+    <SectionSeparator id="button_addons" title="Button addons" />
+
+    <Sample>
+      <div class="field has-addons">
+        <p class="control">
+          <Button>
+            <Icon size="small" icon="fas fa-align-left" />
+            <span>Left</span>
+          </Button>
+        </p>
+        <p class="control">
+          <Button>
+            <Icon size="small" icon="fas fa-align-center" />
+            <span>Center</span>
+          </Button>
+        </p>
+        <p class="control">
+          <Button>
+            <Icon size="small" icon="fas fa-align-right" />
+            <span>Right</span>
+          </Button>
+        </p>
+      </div>
+    </Sample>
+
+    <SectionSeparator id="list_of_buttons" title="List of buttons" />
+
+    <div class="columns">
+      <div class="column is-half">
+        <Sample>
+          <div class="buttons">
+            <Button color="success">Save changes</Button>
+            <Button color="info">Save and continue</Button>
+            <Button color="danger">Cancel</Button>
+          </div>
+
+          <div class="buttons has-addons">
+            <Button color="success" selected>Yes</Button>
+            <Button>Maybe</Button>
+            <Button>No</Button>
+          </div>
+
+          <div class="buttons has-addons is-centered">
+            <Button>Yes</Button>
+            <Button color="info" selected>Maybe</Button>
+            <Button>No</Button>
+          </div>
+
+          <div class="buttons has-addons is-right">
+            <Button>Yes</Button>
+            <Button>Maybe</Button>
+            <Button color="danger" selected>No</Button>
+          </div>
+        </Sample>
+      </div>
+    </div>
 
     <a href="https://github.com/tiagoefmoraes/learn_surface/blob/master/lib/learn_surface_web/views/surface/surface_index.ex">demo code</a><br/>
     <a href="https://github.com/tiagoefmoraes/learn_surface/blob/master/lib/surface_bulma/button.ex">Button code</a>

@@ -19,6 +19,7 @@ defmodule SurfaceBulma.Button do
   property loading, :boolean
   property title, :string
   property disabled, :boolean
+  property selected, :boolean
 
   @spec render(map) :: Phoenix.LiveView.Rendered.t()
   def render(assigns) do
@@ -40,6 +41,7 @@ defmodule SurfaceBulma.Button do
         isFocused: @focused,
         isActive: @active,
         isLoading: @loading,
+        isSelected: @selected,
       }}>{{ @inner_content.() }}</button>
     """
   end
