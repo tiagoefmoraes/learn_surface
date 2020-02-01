@@ -3,6 +3,7 @@ defmodule LearnSurfaceWeb.SurfaceIndex do
   alias LearnSurfaceWeb.Button
 
   def render(assigns) do
+    path = assigns.path
     # TODO: get_flash?
     # <main role="main" class="container">
     #   <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
@@ -24,7 +25,14 @@ defmodule LearnSurfaceWeb.SurfaceIndex do
     </section>
     <section class="section">
       <div class="container">
-        <Button/>
+        <div class="tabs">
+          <ul>
+            <li :for={{ route <- ~w(button icon tabs) }} class={{isActive: path == route}}>
+              <a href={{ route }}>{{String.capitalize(route)}}</a>
+            </li>
+          </ul>
+        </div>
+        {{ route(assigns) }}
       </div>
     </section>
     <footer class="footer">
@@ -39,7 +47,26 @@ defmodule LearnSurfaceWeb.SurfaceIndex do
     """
   end
 
-  def mount(_params, _session, socket) do
-    {:ok, socket}
+  defp route(%{ path: "button" } = assigns) do
+    ~H"""
+      <Button />
+    """
+  end
+
+  defp route(%{ path: "icon" } = assigns) do
+    ~H"""
+      <h1 class="title">Icon</h1>
+      Under construction
+    """
+  end
+
+  defp route(assigns) do
+    ~H"""
+      <h1 class="title">path not found "{{@path}}"</h1>
+    """
+  end
+
+  def mount(params, _session, socket) do
+    {:ok, assign(socket, path: params["path"] |> Enum.join())}
   end
 end
