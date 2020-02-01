@@ -35,6 +35,7 @@ Surface
   don't generate properties when they are nil, empty? and false(y)?
   error when missing open " on property ex: <Icon size=small" />
   comments shortcut should insert <!-- --> or # should work
+  <br /> generates <br>
 
 Surface Bulma
   How to support native attributes?
