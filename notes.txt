@@ -30,19 +30,19 @@ space on
       ////this empty line
       </button>
 
-native attributes
+Surface
+  css_class generate only unique values? ex: <Button class="button">duplicates button</Button>
+  don't generate properties when they are nil, empty? and false(y)?
+  error when missing open " on property ex: <Icon size=small" />
+  comments shortcut should insert <!-- --> or # should work
 
-css_class generate only unique values? ex: <Button class="button">duplicates button</Button>
-button should encapsulate icon?
-don't generate properties when they are nil, empty? and false(y)?
+Surface Bulma
+  How to support native attributes?
+  button should encapsulate icon?
 
-error when missing open " on property ex: <Icon size=small" />
-
-Icon page
-  replace item with properties ex: style(fab), name(fa-erlang)
-  create FaIcon where name can be just "erlang"
-  is this too much complexity?
-  https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
-Field page
-
-comments shortcut should insert <!-- --> or # should work
+  Icon page
+    replace item with properties ex: style(fab), name(fa-erlang)
+    create FaIcon where name can be just "erlang"
+    is this too much complexity?
+    https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
+  Field page
