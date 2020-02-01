@@ -16,12 +16,16 @@ defmodule LearnSurfaceWeb.Button do
       <Button>Button</Button>
     </Sample>
 
+    <h4 class="subtitle">Tags</h4>
+
     <Sample>
-      TODO: a, input submit, input reset, span<br/>
-      <a class="button">Anchor</a>
-      <Button>Button</Button>
-      <input class="button" type="submit" value="Submit input">
-      <input class="button" type="reset" value="Reset input">
+      <!-- TODO: a, input submit, input reset, span<br/> -->
+      <div class="buttons">
+        <a class="button">Anchor</a>
+        <Button>Button</Button>
+        <input class="button" type="submit" value="Submit input">
+        <input class="button" type="reset" value="Reset input">
+      </div>
     </Sample>
 
     <SectionSeparator id="colors" title="Colors" />
@@ -33,6 +37,8 @@ defmodule LearnSurfaceWeb.Button do
       <Button color="black">Black</Button>
       <Button color="text">Text</Button>
     </Sample>
+
+    <h4 class="subtitle">Primary colors</h4>
 
     <Sample>
       <div class="buttons">
@@ -47,6 +53,8 @@ defmodule LearnSurfaceWeb.Button do
       <Button color="danger">Danger</Button>
       </div>
     </Sample>
+
+    <h4 class="subtitle">Light colors</h4>
 
     <Sample>
       <div class="buttons">
@@ -65,12 +73,16 @@ defmodule LearnSurfaceWeb.Button do
     <SectionSeparator id="sizes" title="Sizes" />
 
     <Sample>
-      <Button size="small">Small</Button>
-      <Button>Default</Button>
-      <Button size="normal">Normal</Button>
-      <Button size="medium">Medium</Button>
-      <Button size="large">Large</Button>
+      <div class="buttons">
+        <Button size="small">Small</Button>
+        <Button>Default</Button>
+        <Button size="normal">Normal</Button>
+        <Button size="medium">Medium</Button>
+        <Button size="large">Large</Button>
+      </div>
     </Sample>
+
+    <h4 class="subtitle">Size of all buttons in a List of buttons</h4>
 
     <Sample>
       <div class="buttons are-medium">
@@ -80,127 +92,81 @@ defmodule LearnSurfaceWeb.Button do
       </div>
     </Sample>
 
-    <Sample>
-      <div class="buttons are-small">
-        <Button>Small</Button>
-        <Button>Small</Button>
-        <Button>Small</Button>
-        <Button size="normal">Normal</Button>
-        <Button>Small</Button>
-      </div>
-    </Sample>
-
     <SectionSeparator id="displays" title="Displays" />
 
     <Sample>
-      <Button size="small" expand>Small expanded</Button>
-      <Button expand>Normal expanded</Button>
-      <Button size="medium" expand>Medium expanded</Button>
-      <Button size="large" expand>Large expanded</Button>
+      <div class="buttons">
+        <Button size="small" expand>Small expanded</Button>
+        <Button expand>Normal expanded</Button>
+        <Button size="medium" expand>Medium expanded</Button>
+        <Button size="large" expand>Large expanded</Button>
+      </div>
     </Sample>
 
     <SectionSeparator id="styles" title="Styles" />
 
-    <Sample>
-      <Button outlined>Outlined</Button>
-      <Button color="primary" outlined>Outlined</Button>
-      <Button color="link" outlined>Outlined</Button>
-      <Button color="info" outlined>Outlined</Button>
-      <Button color="success" outlined>Outlined</Button>
-      <Button color="danger" outlined>Outlined</Button>
-    </Sample>
-
-    <Sample class="is-link">
-      <Button color="primary" inverted>Inverted</Button>
-      <Button color="link" inverted>Inverted</Button>
-      <Button color="info" inverted>Inverted</Button>
-      <Button color="success" inverted>Inverted</Button>
-      <Button color="danger" inverted>Inverted</Button>
-    </Sample>
-
-    <Sample class="is-link">
-      <Button color="primary" inverted outlined>Invert Outlined</Button>
-      <Button color="link" inverted outlined>Invert Outlined</Button>
-      <Button color="info" inverted outlined>Invert Outlined</Button>
-      <Button color="success" inverted outlined>Invert Outlined</Button>
-      <Button color="danger" inverted outlined>Invert Outlined</Button>
-    </Sample>
+    <h4 class="subtitle">Outlined</h4>
 
     <Sample>
-      <Button rounded>Rounded</Button>
-      <Button color="primary" rounded>Rounded</Button>
-      <Button color="link" rounded>Rounded</Button>
-      <Button color="info" rounded>Rounded</Button>
-      <Button color="success" rounded>Rounded</Button>
-      <Button color="danger" rounded>Rounded</Button>
+      <div class="buttons">
+        <Button outlined>Outlined</Button>
+        <Button color="primary" outlined>Outlined</Button>
+        <Button color="link" outlined>Outlined</Button>
+        <Button color="info" outlined>Outlined</Button>
+        <Button color="success" outlined>Outlined</Button>
+        <Button color="danger" outlined>Outlined</Button>
+      </div>
+    </Sample>
+
+    <h4 class="subtitle">Inverted</h4>
+
+    <Sample class="">
+      <div class="buttons">
+        <Button color="primary" inverted>Inverted</Button>
+        <Button color="link" inverted>Inverted</Button>
+        <Button color="info" inverted>Inverted</Button>
+        <Button color="success" inverted>Inverted</Button>
+        <Button color="danger" inverted>Inverted</Button>
+      </div>
+    </Sample>
+
+    <h4 class="subtitle">Inverted Outlined</h4>
+
+    <Sample class="has-background-grey-light">
+      <div class="buttons">
+        <Button color="primary" inverted outlined>Invert Outlined</Button>
+        <Button color="link" inverted outlined>Invert Outlined</Button>
+        <Button color="info" inverted outlined>Invert Outlined</Button>
+        <Button color="success" inverted outlined>Invert Outlined</Button>
+        <Button color="danger" inverted outlined>Invert Outlined</Button>
+      </div>
+    </Sample>
+
+    <h4 class="subtitle">Rounded</h4>
+
+    <Sample>
+      <div class="buttons">
+        <Button rounded>Rounded</Button>
+        <Button color="primary" rounded>Rounded</Button>
+      </div>
     </Sample>
 
     <SectionSeparator id="states" title="States" />
 
     <Sample>
-      <Button>Normal</Button>
-      <Button color="primary">Normal</Button>
-      <Button color="link">Normal</Button>
-      <Button color="info">Normal</Button>
-      <Button color="success">Normal</Button>
-      <Button color="warning">Normal</Button>
-      <Button color="danger">Normal</Button>
+      <div class="buttons">
+        <Button>Normal</Button>
+        <Button hovered>Hover</Button>
+        <Button active>Active</Button>
+        <Button focused>Focus</Button>
+        <Button loading>Loading</Button>
+        <!-- TODO: Button Span -->
+        <span class="button is-static">Static</span>
+        <Button title="Disabled button" disabled>Disabled</Button>
+      </div>
     </Sample>
 
-    <Sample>
-      <Button hovered>Hover</Button>
-      <Button color="primary" hovered>Hover</Button>
-      <Button color="link" hovered>Hover</Button>
-      <Button color="info" hovered>Hover</Button>
-      <Button color="success" hovered>Hover</Button>
-      <Button color="warning" hovered>Hover</Button>
-      <Button color="danger" hovered>Hover</Button>
-    </Sample>
-
-    <Sample>
-      <Button focused>Focus</Button>
-      <Button color="primary" focused>Focus</Button>
-      <Button color="link" focused>Focus</Button>
-      <Button color="info" focused>Focus</Button>
-      <Button color="success" focused>Focus</Button>
-      <Button color="warning" focused>Focus</Button>
-      <Button color="danger" focused>Focus</Button>
-    </Sample>
-
-    <Sample>
-      <Button active>Active</Button>
-      <Button color="primary" active>Active</Button>
-      <Button color="link" active>Active</Button>
-      <Button color="info" active>Active</Button>
-      <Button color="success" active>Active</Button>
-      <Button color="warning" active>Active</Button>
-      <Button color="danger" active>Active</Button>
-    </Sample>
-
-    <Sample>
-      <Button loading>Loading</Button>
-      <Button color="primary" loading>Loading</Button>
-      <Button color="link" loading>Loading</Button>
-      <Button color="info" loading>Loading</Button>
-      <Button color="success" loading>Loading</Button>
-      <Button color="warning" loading>Loading</Button>
-      <Button color="danger" loading>Loading</Button>
-    </Sample>
-
-    <Sample>
-      TODO: Button Span<br/>
-      <span class="button is-static">Static</span>
-    </Sample>
-
-    <Sample>
-      <Button title="Disabled button" disabled>Disabled</Button>
-      <Button color="primary" title="Disabled button" disabled>Disabled</Button>
-      <Button color="link" title="Disabled button" disabled>Disabled</Button>
-      <Button color="info" title="Disabled button" disabled>Disabled</Button>
-      <Button color="success" title="Disabled button" disabled>Disabled</Button>
-      <Button color="warning" title="Disabled button" disabled>Disabled</Button>
-      <Button color="danger" title="Disabled button" disabled>Disabled</Button>
-    </Sample>
+    <SectionSeparator id="icons" title="Icons" />
 
     <Sample>
       <p class="buttons">
@@ -235,7 +201,6 @@ defmodule LearnSurfaceWeb.Button do
         </Button>
       </p>
     </Sample>
-
 
     <SectionSeparator id="button_group" title="Button group" />
 

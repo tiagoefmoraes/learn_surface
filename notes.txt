@@ -44,3 +44,5 @@ Icon page
   is this too much complexity?
   https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
 Field page
+
+comments shortcut should insert <!-- --> or # should work
