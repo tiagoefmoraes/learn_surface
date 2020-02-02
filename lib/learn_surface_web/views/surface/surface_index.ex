@@ -47,6 +47,12 @@ defmodule LearnSurfaceWeb.SurfaceIndex do
     """
   end
 
+  defp route(%{ path: "" } = assigns) do
+    ~H"""
+      <h1 class="title">Select a component above</h1>
+    """
+  end
+
   defp route(%{ path: "button" } = assigns) do
     ~H"""
       <Button />
