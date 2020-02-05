@@ -17,6 +17,7 @@ defmodule LearnSurfaceWeb.Router do
   scope "/", LearnSurfaceWeb do
     pipe_through :browser
 
+    live "/playground", Playground
     live "/*path", SurfaceIndex
   end
 

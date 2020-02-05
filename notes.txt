@@ -30,12 +30,20 @@ space on
       ////this empty line
       </button>
 
+VSCode + Surface
+  formatting?
+  paste should format
+
 Surface
   css_class generate only unique values? ex: <Button class="button">duplicates button</Button>
   don't generate properties when they are nil, empty? and false(y)?
   error when missing open " on property ex: <Icon size=small" />
   comments shortcut should insert <!-- --> or # should work
   <br /> generates <br>
+  can we detect that the function was not defined for phx-click? function LearnSurfaceWeb.Playground.handle_event/3 is undefined or private
+
+LiveView
+  Should LiveView show errors in browser? ex: no function defined, errors on return values
 
 Surface Bulma
   How to support native attributes?
@@ -47,3 +55,8 @@ Surface Bulma
     is this too much complexity?
     https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
   Field page
+
+
+???
+
+assign inside button is not rendered on click (git@github.com:tiagoefmoraes/phoenix_live_view_example.git)
