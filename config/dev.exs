@@ -61,7 +61,9 @@ config :learn_surface, LearnSurfaceWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/learn_surface_web/(live|views)/.*(ex)$",
-      ~r"lib/learn_surface_web/templates/.*(eex)$"
+      ~r"lib/learn_surface_web/templates/.*(eex)$",
+      ~r"lib/surface_bulma/.*(ex)$"
+
     ]
   ]
 
