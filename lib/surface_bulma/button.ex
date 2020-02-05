@@ -5,6 +5,7 @@ defmodule SurfaceBulma.Button do
 
   use Surface.Component
 
+  property click, :event
   property color, :string
   property light, :boolean
   property size, :string, default: nil
@@ -26,10 +27,11 @@ defmodule SurfaceBulma.Button do
     ~H"""
     <button
       type="button"
+      :on-phx-click={{@click || "remove_when_surface_accepts_nil"}}
       disabled={{@disabled}}
       title={{@title}}
       class={{
-        :button,
+        "button",
         "is-#{@color}": @color !== nil,
         "is-#{@size}": @size !== nil,
         isLight: @light,

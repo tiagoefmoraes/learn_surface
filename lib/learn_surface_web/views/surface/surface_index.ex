@@ -55,7 +55,7 @@ defmodule LearnSurfaceWeb.SurfaceIndex do
 
   defp route(%{ path: "button" } = assigns) do
     ~H"""
-      <Button />
+      <Button id="component_with_handle_event"/>
     """
   end
 
@@ -74,5 +74,10 @@ defmodule LearnSurfaceWeb.SurfaceIndex do
 
   def mount(params, _session, socket) do
     {:ok, assign(socket, path: params["path"] |> Enum.join())}
+  end
+
+  def handle_event("remove_when_surface_accepts_nil", a, socket) do
+    IO.inspect(["the button was clicked", a])
+    {:noreply, socket}
   end
 end

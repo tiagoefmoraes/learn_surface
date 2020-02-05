@@ -6,7 +6,7 @@ defmodule LearnSurfaceWeb.SampleCode do
     {:safe, content} =
       Phoenix.HTML.html_escape(
         children
-        |> String.replace(~r/\n  /, "\n", global: true)
+        |> String.replace(~r/\n    /, "\n", global: true)
         |> String.trim()
       )
 

@@ -33,6 +33,9 @@ space on
 VSCode + Surface
   formatting?
   paste should format
+  class={{
+    "button", # paints the string
+    "is-#{@color}": @color !== nil, # doesn't paint the string with interpolation
 
 Surface
   css_class generate only unique values? ex: <Button class="button">duplicates button</Button>
@@ -40,7 +43,11 @@ Surface
   error when missing open " on property ex: <Icon size=small" />
   comments shortcut should insert <!-- --> or # should work
   <br /> generates <br>
+  don't accept <br>, only <br />
   can we detect that the function was not defined for phx-click? function LearnSurfaceWeb.Playground.handle_event/3 is undefined or private
+  <button click="click" doesn't complain that click doesn't exist
+  LiveComponent needs root tag?
+
 
 LiveView
   Should LiveView show errors in browser? ex: no function defined, errors on return values
@@ -56,7 +63,9 @@ Surface Bulma
     https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
   Field page
 
-
+Demo
+  code samples
+  highlighting
 ???
 
 assign inside button is not rendered on click (git@github.com:tiagoefmoraes/phoenix_live_view_example.git)
