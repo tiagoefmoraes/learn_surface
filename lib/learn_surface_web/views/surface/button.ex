@@ -1,6 +1,7 @@
 defmodule LearnSurfaceWeb.Button do
   use Surface.Component
   alias LearnSurfaceWeb.Sample
+  alias LearnSurfaceWeb.SampleCode
   alias LearnSurfaceWeb.SectionSeparator
   alias SurfaceBulma.Button
   alias SurfaceBulma.Icon
@@ -12,13 +13,13 @@ defmodule LearnSurfaceWeb.Button do
       The classic <strong>button</strong>, in different colors, sizes, and states
     </h2>
 
-    <Sample>
+    <#SampleCode>
       <Button>Button</Button>
-    </Sample>
+    </#SampleCode>
 
     <h4 class="subtitle">Tags</h4>
 
-    <Sample>
+    <#SampleCode>
       <!-- TODO: a, input submit, input reset, span<br/> -->
       <div class="buttons">
         <a class="button">Anchor</a>
@@ -26,21 +27,21 @@ defmodule LearnSurfaceWeb.Button do
         <input class="button" type="submit" value="Submit input">
         <input class="button" type="reset" value="Reset input">
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="colors" title="Colors" />
 
-    <Sample>
+    <#SampleCode>
       <Button color="white">White</Button>
       <Button color="light">Light</Button>
       <Button color="dark">Dark</Button>
       <Button color="black">Black</Button>
       <Button color="text">Text</Button>
-    </Sample>
+    </#SampleCode>
 
     <h4 class="subtitle">Primary colors</h4>
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons">
         <Button color="primary">Primary</Button>
         <Button color="link">Link</Button>
@@ -52,11 +53,11 @@ defmodule LearnSurfaceWeb.Button do
       <Button color="warning">Warning</Button>
       <Button color="danger">Danger</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <h4 class="subtitle">Light colors</h4>
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons">
         <Button color="primary" light>Primary</Button>
         <Button color="link" light>Link</Button>
@@ -68,11 +69,11 @@ defmodule LearnSurfaceWeb.Button do
         <Button color="warning" light>Warning</Button>
         <Button color="danger" light>Danger</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="sizes" title="Sizes" />
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons">
         <Button size="small">Small</Button>
         <Button>Default</Button>
@@ -80,34 +81,34 @@ defmodule LearnSurfaceWeb.Button do
         <Button size="medium">Medium</Button>
         <Button size="large">Large</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <h4 class="subtitle">Size of all buttons in a List of buttons</h4>
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons are-medium">
         <Button>All</Button>
         <Button>Medium</Button>
         <Button>Size</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="displays" title="Displays" />
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons">
         <Button size="small" expand>Small expanded</Button>
         <Button expand>Normal expanded</Button>
         <Button size="medium" expand>Medium expanded</Button>
         <Button size="large" expand>Large expanded</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="styles" title="Styles" />
 
     <h4 class="subtitle">Outlined</h4>
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons">
         <Button outlined>Outlined</Button>
         <Button color="primary" outlined>Outlined</Button>
@@ -116,11 +117,11 @@ defmodule LearnSurfaceWeb.Button do
         <Button color="success" outlined>Outlined</Button>
         <Button color="danger" outlined>Outlined</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <h4 class="subtitle">Inverted</h4>
 
-    <Sample class="">
+    <#SampleCode class="">
       <div class="buttons">
         <Button color="primary" inverted>Inverted</Button>
         <Button color="link" inverted>Inverted</Button>
@@ -128,11 +129,11 @@ defmodule LearnSurfaceWeb.Button do
         <Button color="success" inverted>Inverted</Button>
         <Button color="danger" inverted>Inverted</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <h4 class="subtitle">Inverted Outlined</h4>
 
-    <Sample class="has-background-grey-light">
+    <#SampleCode class="has-background-grey-light">
       <div class="buttons">
         <Button color="primary" inverted outlined>Invert Outlined</Button>
         <Button color="link" inverted outlined>Invert Outlined</Button>
@@ -140,20 +141,20 @@ defmodule LearnSurfaceWeb.Button do
         <Button color="success" inverted outlined>Invert Outlined</Button>
         <Button color="danger" inverted outlined>Invert Outlined</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <h4 class="subtitle">Rounded</h4>
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons">
         <Button rounded>Rounded</Button>
         <Button color="primary" rounded>Rounded</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="states" title="States" />
 
-    <Sample>
+    <#SampleCode>
       <div class="buttons">
         <Button>Normal</Button>
         <Button hovered>Hover</Button>
@@ -164,11 +165,11 @@ defmodule LearnSurfaceWeb.Button do
         <span class="button is-static">Static</span>
         <Button title="Disabled button" disabled>Disabled</Button>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="icons" title="Icons" />
 
-    <Sample>
+    <#SampleCode>
       <p class="buttons">
         <Button>
           <Icon icon="fas fa-bold" />
@@ -186,9 +187,9 @@ defmodule LearnSurfaceWeb.Button do
           <span>Phoenix</span>
         </Button>
       </p>
-    </Sample>
+    </#SampleCode>
 
-    <Sample>
+    <#SampleCode>
       <p class="buttons">
         <Button size="large">
           <Icon size="small" icon="fas fa-heading" />
@@ -200,11 +201,11 @@ defmodule LearnSurfaceWeb.Button do
           <Icon size="medium" icon="fas fa-heading fa-2x" />
         </Button>
       </p>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="button_group" title="Button group" />
 
-    <Sample>
+    <#SampleCode>
       <div class="field is-grouped">
         <p class="control">
           <Button color="link">
@@ -222,11 +223,11 @@ defmodule LearnSurfaceWeb.Button do
           </Button>
         </p>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="button_addons" title="Button addons" />
 
-    <Sample>
+    <#SampleCode>
       <div class="field has-addons">
         <p class="control">
           <Button>
@@ -247,39 +248,35 @@ defmodule LearnSurfaceWeb.Button do
           </Button>
         </p>
       </div>
-    </Sample>
+    </#SampleCode>
 
     <SectionSeparator id="list_of_buttons" title="List of buttons" />
 
-    <div class="columns">
-      <div class="column is-half">
-        <Sample>
-          <div class="buttons">
-            <Button color="success">Save changes</Button>
-            <Button color="info">Save and continue</Button>
-            <Button color="danger">Cancel</Button>
-          </div>
-
-          <div class="buttons has-addons">
-            <Button color="success" selected>Yes</Button>
-            <Button>Maybe</Button>
-            <Button>No</Button>
-          </div>
-
-          <div class="buttons has-addons is-centered">
-            <Button>Yes</Button>
-            <Button color="info" selected>Maybe</Button>
-            <Button>No</Button>
-          </div>
-
-          <div class="buttons has-addons is-right">
-            <Button>Yes</Button>
-            <Button>Maybe</Button>
-            <Button color="danger" selected>No</Button>
-          </div>
-        </Sample>
+    <#SampleCode>
+      <div class="buttons">
+        <Button color="success">Save changes</Button>
+        <Button color="info">Save and continue</Button>
+        <Button color="danger">Cancel</Button>
       </div>
-    </div>
+
+      <div class="buttons has-addons">
+        <Button color="success" selected>Yes</Button>
+        <Button>Maybe</Button>
+        <Button>No</Button>
+      </div>
+
+      <div class="buttons has-addons is-centered">
+        <Button>Yes</Button>
+        <Button color="info" selected>Maybe</Button>
+        <Button>No</Button>
+      </div>
+
+      <div class="buttons has-addons is-right">
+        <Button>Yes</Button>
+        <Button>Maybe</Button>
+        <Button color="danger" selected>No</Button>
+      </div>
+    </#SampleCode>
 
     <a href="https://github.com/tiagoefmoraes/learn_surface/blob/master/lib/learn_surface_web/views/surface/surface_index.ex">demo code</a><br/>
     <a href="https://github.com/tiagoefmoraes/learn_surface/blob/master/lib/surface_bulma/button.ex">Button code</a>
